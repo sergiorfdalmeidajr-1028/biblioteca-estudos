@@ -3263,6 +3263,7 @@ capitulo-3-planejamento-estrategico-crescimento-e-longevidade-aula-03	Capítulo 
     var l = a.getAttribute('data-local'), o = a.getAttribute('data-online');
     var meta = a.parentNode.querySelector('[data-meta-abrir]');
     if (local && l) { a.href = l; a.removeAttribute('target'); }
+    else if (l && /\.github\.io$/.test(location.hostname)) { a.href = l; } /* GitHub Pages: abre o caderno publicado aqui, não a cópia antiga do claude.ai */
     else if (o && (!local || mostrarOnline())) { a.href = o; }
     else if (l) { a.href = l; a.setAttribute('aria-disabled', 'true'); if (meta) { meta.textContent = 'Ainda só na pasta local'; meta.hidden = false; } }
   });
