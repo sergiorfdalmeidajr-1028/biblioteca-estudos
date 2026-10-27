@@ -576,6 +576,167 @@ details.exercicio[data-auto="revisar"] > summary::after { content: "  ↻ precis
 </style>
 <style>:root{ --cor: #62733e; --cor-texto: #48562c; --cor-clara: #bbc79e; --marca: rgba(158, 178, 112, 0.5); --marca-escuro: rgba(148, 168, 102, 0.3); --cor-fundo: #d9d7c9; --cor-fundo-escuro: #2f312a }</style>
 <script>try{var K='biblioteca-mba:preferencias',p=JSON.parse(localStorage.getItem(K)||'{}'),mh=/(?:^|[#?&])tema=(claro|escuro|sepia|auto)(?![a-z])/.exec(location.hash+' '+location.search);if(mh){p.tema=mh[1];try{localStorage.setItem(K,JSON.stringify(p));}catch(e){}if(/tema=/.test(location.hash)){var nh=location.hash.replace(/[#&]tema=(claro|escuro|sepia|auto)/,'').replace(/^&/,'#');history.replaceState(null,'',location.pathname+location.search+(nh.length>1?nh:''));}}if(p.tema==='escuro'||p.tema==='sepia')document.documentElement.setAttribute('data-tema',p.tema);else if(p.tema!=='auto')document.documentElement.setAttribute('data-tema','claro');if(p.fonte)document.documentElement.style.setProperty('--tam',p.fonte+'px');}catch(e){}</script>
+<!--tema-modelo-d2:inicio--><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&display=swap"><style id="tema-modelo-d2">
+/* ===== tema-modelo-d2: visual do modelo PDF aprovado (navy + dourado, Inter + Source Serif 4) ===== */
+:root, html[data-tema="claro"], :root[data-theme="light"]{
+ --serif:"Source Serif 4","Noto Serif",Georgia,serif;
+ --sans:"Inter","Segoe UI",Roboto,system-ui,sans-serif;
+ --navy:#1c2b4a; --navy2:#2b4a7a; --navy-esc:#14213d; --ouro:#f3b33d; --ouro-esc:#b37d12;
+ --h2-fundo:#f3f6fa; --zebra:#f4f6fa; --linha-t:#dfe4ec;
+ --mesa:#e9edf3; --papel:#ffffff; --tinta:#1f2430; --tinta-suave:#33415c; --tinta-fraca:#5c667a;
+ --pauta:#dfe4ec; --pauta-forte:#c3cbd8; --margem:#f3b33d; --neutro-fundo:#f3f6fa;
+ --alerta:#b36b00; --alerta-fundo:#fff6e5; --complemento:#23704a; --complemento-fundo:#eaf5ee;
+ --oficial:#23704a; --proprio:#7a5a12; --busca:#f6e7c1;
+ --cor:#1c2b4a; --cor-texto:#1d5fa8; --cor-fundo:#eef4fb; --cor-clara:#9fc0ea; --marca:rgba(243,179,61,.38);
+ --nota-f:#fff6e5; --nota-b:#e08a00; --nota-t:#b36b00; --ref-f:#eef4fb; --ref-b:#4a7dbf; --ref-t:#2f5f9e;
+ --call-f:#eaf5ee; --call-b:#2e8b57; --call-t:#23704a; --cit-f:#fbf8ef; --cit-t:#3a3326; --pg-f:#f6e7c1; --pg-t:#7a5a12;
+ --madeira:#1c2b4a; --madeira-escura:#14213d; --fundo-estante:#f3f6fa; --latao:#f3b33d; --latao-claro:#f7cf7a; --etiqueta:#fff;
+}
+html[data-tema="escuro"], :root[data-theme="dark"]{
+ --navy:#9fc0ea; --navy2:#9fc0ea; --h2-fundo:#1a2333; --zebra:#161d2a; --linha-t:#2a3446;
+ --mesa:#0b1220; --papel:#111a2b; --tinta:#dbe1ec; --tinta-suave:#b3bdd0; --tinta-fraca:#8a96ab;
+ --pauta:#25304a; --pauta-forte:#34405a; --margem:#b37d12; --neutro-fundo:#18223a;
+ --alerta:#f0b45a; --alerta-fundo:#2a2112; --complemento:#7fcca0; --complemento-fundo:#13261c;
+ --oficial:#7fcca0; --proprio:#f3c96a; --busca:#6b5a24;
+ --cor:#f3b33d; --cor-texto:#9fc0ea; --cor-fundo:#1a2740; --marca:rgba(243,179,61,.28);
+ --nota-f:#2a2112; --nota-b:#e08a00; --nota-t:#f0b45a; --ref-f:#142238; --ref-b:#4a7dbf; --ref-t:#9fc0ea;
+ --call-f:#13261c; --call-b:#2e8b57; --call-t:#7fcca0; --cit-f:#1f1c14; --cit-t:#e6dcc3; --pg-f:#4a3a14; --pg-t:#f6e7c1;
+ --fundo-estante:#111a2b; --etiqueta:#18223a;
+}
+html[data-tema="sepia"], :root[data-theme="sepia"]{
+ --mesa:#e8dcc2; --papel:#f8f1e1; --tinta:#2e2a22; --tinta-suave:#4a4434; --tinta-fraca:#6e6550;
+ --pauta:#e2d6bd; --pauta-forte:#cdbd9c; --neutro-fundo:#efe5cf; --h2-fundo:#efe7d6; --zebra:#f1e8d4; --linha-t:#e0d3b8;
+ --busca:#e8cf86; --fundo-estante:#efe5cf; --etiqueta:#fbf6ea;
+}
+html{font-size:17px}
+body{font-family:var(--serif);color:var(--tinta);background:var(--mesa);line-height:1.55;font-variant-numeric:normal}
+h1,h2,h3,h4,button,input,select,textarea,nav,.bt,.chip{font-family:var(--sans)}
+a{color:var(--cor-texto)}
+::selection{background:rgba(243,179,61,.35)}
+:focus-visible{outline:3px solid var(--ouro)!important}
+/* barras, botões, painéis */
+.topo{background:var(--navy-esc)!important;color:#fff;border-bottom:3px solid var(--ouro)!important;font-family:var(--sans)}
+.topo a,.topo .voltar,.topo .bt,.topo nav a,.topo .titulo-curto{color:#e6ecf7!important}
+.topo .bt:hover,.topo .voltar:hover,.topo nav a:hover{background:rgba(255,255,255,.12)!important}
+.topo .bt[aria-pressed="true"]{background:rgba(243,179,61,.22)!important;border-color:var(--ouro)!important}
+.topo .titulo-curto span{background:none!important;border-bottom:2px solid var(--ouro)}
+.topo .sep{background:rgba(255,255,255,.25)}
+.bt{font-family:var(--sans);font-weight:500;border-radius:6px}
+.bt.principal,.bt-principal,.bt-abrir{background:var(--navy-esc)!important;color:#fff!important;border:1px solid var(--navy-esc)!important;font-family:var(--sans);font-weight:600;border-radius:6px}
+.bt.principal:hover,.bt-principal:hover,.bt-abrir:hover{background:var(--ouro)!important;color:var(--navy-esc)!important;border-color:var(--ouro)!important}
+.progresso span{background:var(--ouro)!important}
+.chip{font-family:var(--sans);border-radius:999px;border:1px solid var(--pauta-forte);background:var(--papel);color:var(--tinta-suave)}
+.chip[aria-pressed="true"]{background:var(--navy-esc)!important;color:#fff!important;border-color:var(--navy-esc)!important;box-shadow:inset 0 -2px 0 var(--ouro)}
+input[type="search"],.campo-busca input,.busca input,.painel textarea,.editor-nota textarea{font-family:var(--sans);border:1px solid var(--pauta-forte);border-radius:6px;background:var(--papel);color:var(--tinta)}
+input:focus{border-color:var(--ouro)!important;outline:none}
+.painel,.editor-nota,.menu-texto,.lupa{font-family:var(--sans);background:var(--papel)!important;color:var(--tinta);border:1px solid var(--pauta)!important;box-shadow:0 12px 40px rgba(20,33,61,.28)!important}
+.painel header{background:var(--navy-esc)!important;color:#fff!important;border-bottom:3px solid var(--ouro)!important}
+.painel header h2,.editor-nota h2{font-family:var(--sans);font-weight:700;color:inherit}
+.painel header .bt{color:#fff!important}
+.editor-nota h2{color:var(--navy)}
+.abas button{font-family:var(--sans);color:var(--tinta-suave)}
+.abas button[aria-selected="true"]{color:var(--navy)!important;border-bottom:3px solid var(--ouro)!important;font-weight:700}
+.resultados mark,mark.busca{background:var(--pg-f)!important;color:inherit}
+mark.busca.atual{background:var(--ouro)!important;color:#14213d!important}
+.painel .cartao-treino{border:1px solid var(--pauta)!important;border-left:5px solid var(--ouro)!important;background:var(--h2-fundo)!important;border-radius:6px}
+.painel .cartao-treino .pergunta{font-family:var(--sans);font-weight:700;color:var(--navy)}
+.painel .cartao-treino .resposta{font-family:var(--serif);background:var(--cit-f);border-left:4px solid var(--ouro);padding:.5em .8em}
+.painel .fim-treino .placar{font-family:var(--sans);font-weight:800;color:var(--navy)}
+#barra-selecao,.aviso{background:var(--navy-esc)!important;color:#fff!important;border:1px solid var(--ouro)!important;font-family:var(--sans)}
+#barra-selecao button{color:#fff!important}
+.barra-inferior{background:var(--navy-esc)!important;border-top:3px solid var(--ouro)!important}
+.barra-inferior .bt{color:#fff!important}
+.veu{background:rgba(20,33,61,.55)!important}
+.selo{font-family:var(--sans);font-weight:600;border-radius:3px;background:var(--pg-f)!important;color:var(--pg-t)!important;border:0!important}
+.selo.oficial{background:var(--call-f)!important;color:var(--call-t)!important}
+.selo.externo{background:var(--ref-f)!important;color:var(--ref-t)!important}
+.layout{gap:28px}
+.sumario{font-family:var(--sans)}
+.sumario h2{color:var(--navy)!important;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem;border-bottom:3px solid var(--ouro);padding-bottom:4px}
+.sumario .n2>a{color:var(--navy)!important;font-weight:700;border-bottom:1px solid var(--linha-t);border-radius:0}
+.sumario .n3>a{color:var(--tinta-suave)}
+.sumario a.ativo{border-left-color:var(--ouro)!important;background:var(--h2-fundo)!important;color:var(--navy)!important}
+.pagina{background:var(--papel)!important;border:1px solid var(--pauta)!important;border-radius:6px;padding:0 64px 72px!important;overflow:hidden;box-shadow:0 2px 14px rgba(20,33,61,.08)}
+.pagina::before{display:none!important}
+#conteudo{max-width:none;font-size:1rem}
+#conteudo p{text-align:justify;hyphens:auto}
+/* capa -> hero */
+.capa{position:relative;margin:0 -64px 2.2rem!important;padding:46px 64px 34px;background:linear-gradient(160deg,#14213d 0%,#1c2b4a 60%,#26406e 100%);color:#fff}
+.capa .num-hero{font:800 84px/1 "Inter",sans-serif;color:rgba(243,179,61,.95);margin:0 0 10px}
+.capa .curso{font-family:var(--sans)!important;color:#f3b33d!important;font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:.7rem!important}
+#conteudo .capa h1{font:700 2rem/1.18 "Inter",sans-serif!important;color:#fff!important;border:0!important;padding:0!important}
+.capa h1 .marcado{background:none!important;color:#fff!important}
+.capa .subtitulo{font-family:var(--sans)!important;color:#dfe6f3!important;border-top:2px solid #f3b33d;padding-top:14px;font-size:1rem}
+.capa .ficha{font-family:var(--sans);color:#c4cde0!important;border-color:rgba(255,255,255,.2)!important;background:transparent!important;font-size:.8rem}
+.capa .ficha dt{color:#fff!important;font-weight:700}
+.capa .ficha dd{color:#c4cde0!important}
+/* títulos */
+#conteudo h1,#conteudo h2,#conteudo h3,#conteudo h4{font-family:var(--sans)!important;color:var(--navy)!important;text-align:left}
+#conteudo h2{font-size:1.45rem!important;font-weight:800!important;padding:0 0 8px!important;border-bottom:3px solid var(--ouro)!important;border-left:0!important;background:none!important;margin:2.4em 0 .8em!important}
+#conteudo h2 .num-cap{color:var(--ouro-esc,#b37d12)!important;font-weight:800}
+#conteudo h3{font-size:1.15rem!important;font-weight:700!important;padding:7px 0 7px 12px!important;border-left:4px solid var(--navy)!important;background:var(--h2-fundo)!important;margin:1.8em 0 .7em!important}
+#conteudo h4{font-size:1rem!important;color:var(--navy2)!important;font-weight:700!important}
+/* caixas */
+#conteudo .admonition{font-family:var(--sans);font-size:.88rem;line-height:1.5;border-radius:5px!important;padding:10px 14px!important;background:var(--ref-f)!important;border:1px solid var(--pauta)!important;border-left:5px solid var(--ref-b)!important;color:var(--tinta)}
+#conteudo .admonition p{text-align:left}
+#conteudo .admonition>.admonition-title{font-family:var(--sans)!important;font-weight:800!important;font-size:.68rem!important;letter-spacing:.14em;text-transform:uppercase;color:var(--ref-t)!important;background:none!important;margin:0 0 4px!important;padding:0!important;border:0!important}
+#conteudo .admonition.atencao,#conteudo .admonition.divergencia,#conteudo .admonition.lacuna{background:var(--nota-f)!important;border-left-color:var(--nota-b)!important}
+#conteudo .admonition.atencao>.admonition-title,#conteudo .admonition.divergencia>.admonition-title,#conteudo .admonition.lacuna>.admonition-title{color:var(--nota-t)!important}
+#conteudo .admonition.ideia,#conteudo .admonition.exemplo,#conteudo .admonition.pratica,#conteudo .admonition.complemento{background:var(--call-f)!important;border-left-color:var(--call-b)!important}
+#conteudo .admonition.ideia>.admonition-title,#conteudo .admonition.exemplo>.admonition-title,#conteudo .admonition.pratica>.admonition-title,#conteudo .admonition.complemento>.admonition-title{color:var(--call-t)!important}
+#conteudo blockquote{background:var(--cit-f)!important;border-left:4px solid var(--ouro)!important;color:var(--cit-t)!important;padding:10px 16px!important;font-style:italic;border-radius:0 4px 4px 0}
+#conteudo .ref-sec,#conteudo .ref-cad,#conteudo figcaption .origem{font-family:var(--sans)!important;font-style:normal;font-size:.72rem!important;font-weight:600;color:var(--pg-t)!important;background:var(--pg-f)!important;border-radius:3px;padding:0 5px;text-decoration:none}
+#conteudo figcaption{font-family:var(--sans);font-size:.8rem;color:var(--tinta-suave)}
+/* tabelas */
+#conteudo table{font-family:var(--sans)!important;font-size:.82rem!important;border-collapse:collapse!important;width:100%}
+#conteudo th{background:var(--navy-esc)!important;color:#fff!important;font-weight:600!important;border:0!important}
+#conteudo td{border:0!important;border-bottom:1px solid var(--linha-t)!important}
+#conteudo tbody tr:nth-child(even) td{background:var(--zebra)!important}
+.tabela{border:0!important;box-shadow:none!important}
+/* details / exercícios / flashcards */
+#conteudo details{border:1px solid var(--pauta)!important;border-left:5px solid var(--navy2)!important;border-radius:5px!important;background:var(--papel)!important}
+#conteudo details>summary{font-family:var(--sans)!important;font-weight:600;color:var(--navy)!important}
+#conteudo details[open]>summary{background:var(--h2-fundo)!important;border-bottom:1px solid var(--pauta)}
+#conteudo details.flash{border-left-color:var(--ouro)!important}
+#conteudo details.flash>summary{background:var(--cit-f)!important}
+#conteudo .calc{border:1px solid var(--pauta)!important;border-top:4px solid var(--navy)!important;background:var(--h2-fundo)!important;font-family:var(--sans);border-radius:5px}
+#conteudo .calc .calc-titulo{color:var(--navy)!important;font-weight:800}
+#conteudo .revisar-todos{border-left:5px solid var(--ouro)!important;background:var(--cit-f)!important;font-family:var(--sans)}
+#conteudo code{background:var(--h2-fundo)}
+#conteudo .fontes,#conteudo .videos{font-family:var(--sans);font-size:.82rem;background:var(--h2-fundo);border:1px solid var(--pauta);border-radius:5px;padding:4px 14px}
+html[data-tema="escuro"] #conteudo th{background:#26406e!important}
+@media (max-width:760px){.pagina{padding:0 20px 60px!important}.capa{margin:0 -20px 1.6rem!important;padding:30px 20px}.capa .num-hero{font-size:60px}}
+.topo .bt-pdf{border:1px solid var(--ouro)!important;color:#f3b33d!important;font-weight:700}
+.topo .bt-pdf .rotulo{display:inline!important}
+.topo .bt-pdf:hover{background:var(--ouro)!important;color:#14213d!important}
+/* ---- impressão / PDF (modelo D2) ---- */
+@page{size:A4;margin:22mm 18mm 20mm 18mm;
+ @top-left{content:"Biblioteca de Estudos";font:600 8pt "Inter",sans-serif;color:#8a94a6;letter-spacing:.06em;text-transform:uppercase}
+ @top-right{content:"Inovação Tecnológica e Transformação Digital: Impacto e Estratégias – caderno de estudos";font:500 8pt "Inter",sans-serif;color:#8a94a6}
+ @bottom-right{content:counter(page) " / " counter(pages);font:600 8.5pt "Inter",sans-serif;color:#1c2b4a}
+ @bottom-left{content:"Sérgio Almeida";font:400 8pt "Inter",sans-serif;color:#8a94a6}}
+@page:first{margin:0;@top-left{content:none}@top-right{content:none}@bottom-right{content:none}@bottom-left{content:none}}
+@media print{
+ *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+ html,html[data-tema]{font-size:11pt!important;--papel:#fff;--mesa:#fff;--tinta:#1f2430}
+ body{background:#fff!important;line-height:1.55}
+ .topo,.progresso,.retomar,.sumario,.barra-inferior,#barra-selecao,.painel,.veu,.aviso,.menu-texto,.editor-nota,.lupa,.bt-pdf{display:none!important}
+ .layout{display:block!important;padding:0!important;margin:0!important;max-width:none!important}
+ .pagina{border:0!important;box-shadow:none!important;padding:0!important;max-width:none!important;border-radius:0!important;overflow:visible!important}
+ #conteudo{max-width:none!important}
+ .capa{margin:0!important;width:210mm;height:297mm;padding:38mm 22mm 24mm!important;display:flex;flex-direction:column;break-after:page;page-break-after:always}
+ .capa .num-hero{font-size:96pt!important;margin:22mm 0 4mm!important}
+ #conteudo .capa h1{font-size:28pt!important}
+ .capa .subtitulo{font-size:15pt!important}
+ .capa .ficha{margin-top:auto!important;font-size:9pt!important}
+ #conteudo h2{break-before:page;page-break-before:always;font-size:20pt!important;margin-top:0!important}
+ #conteudo h2,#conteudo h3,#conteudo h4{break-after:avoid;page-break-after:avoid;break-inside:avoid}
+ #conteudo .admonition,#conteudo blockquote,#conteudo figure,#conteudo details,#conteudo tr,#conteudo .calc{break-inside:avoid;page-break-inside:avoid}
+ #conteudo thead{display:table-header-group}
+ #conteudo p{orphans:3;widows:3}
+ a{text-decoration:none!important}
+}
+</style><!--tema-modelo-d2:fim-->
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o texto</a>
@@ -583,7 +744,7 @@ details.exercicio[data-auto="revisar"] > summary::after { content: "  ↻ precis
   <a class="voltar so-largo" href="../index.html#pucrio">Biblioteca</a>
   <button class="bt so-estreito" type="button" data-abre="sumario" aria-label="Abrir sumário"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h11"/></svg></button>
   <div class="titulo-curto"><span>Inovação Tecnológica</span></div>
-  <div class="ferramentas">
+  <div class="ferramentas"><button class="bt bt-pdf" type="button" data-d2-pdf data-acao-global="imprimir" title="Imprimir ou salvar em PDF"><svg viewBox="0 0 24 24"><path d="M7 8V3h10v5M7 17H4v-8h16v8h-3M7 14h10v7H7z"/></svg><span class="rotulo">PDF</span></button>
     <button class="bt" type="button" data-abre="painel-busca" title="Buscar no caderno (Ctrl+F)"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span class="rotulo">Buscar</span></button>
     <button class="bt so-topo-largo" type="button" data-abre="menu-texto" aria-expanded="false" title="Tamanho da letra e tema"><svg viewBox="0 0 24 24"><path d="M3 19L8 5l5 14M4.8 14h6.4M14 19l3.5-9 3.5 9M15.2 16h4.6"/></svg><span class="rotulo">Texto</span></button>
     <button class="bt so-topo-largo" type="button" data-abre="painel-marcacoes" title="Minhas notas e destaques"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg><span class="rotulo">Marcações</span></button>
@@ -605,6 +766,7 @@ details.exercicio[data-auto="revisar"] > summary::after { content: "  ↻ precis
   <main class="pagina">
     <article id="conteudo">
 <header class="capa">
+<div class="num-hero" aria-hidden="true">12</div>
 <p class="curso" data-b="b1">MBA em IA e Negócios: Estratégia, Inovação e Resultados (PUC-Rio), disciplina 12</p>
 <h1 data-b="b2"><span class="marcado">Inovação Tecnológica e Transformação Digital: Impacto e Estratégias</span></h1>
 <p class="subtitulo" data-b="b3">Por que a transformação digital é, antes de tudo, mudança de cultura; como adotar tecnologias emergentes sem cair na "tecnologia pela tecnologia"; as ferramentas da inovação (lean, ágil, design thinking, OKR); casos reais em que o simples deu mais resultado que o caro; ciência de dados e IA a serviço do negócio; como mapear tendências; e a ética que precisa vir desde o desenho.</p>
