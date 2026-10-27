@@ -391,6 +391,9 @@ mark.busca.atual{background:var(--ouro)!important;color:#14213d!important}
 .selo{font-family:var(--sans);font-weight:600;border-radius:3px;background:var(--pg-f)!important;color:var(--pg-t)!important;border:0!important}
 .selo.oficial{background:var(--call-f)!important;color:var(--call-t)!important}
 .selo.externo{background:var(--ref-f)!important;color:var(--ref-t)!important}
+/* fix 27/10: contraste AA */
+:root,html[data-tema="claro"],html[data-tema="sepia"]{--nota-t:#8f5400;--ouro-esc:#855a00;--call-t:#1d5e3d}
+html[data-tema="escuro"]{--ouro-esc:#f3b33d}
 .topo .marca-site{color:#fff!important;font-family:var(--sans);font-weight:800}
 .faixa,.folha{background:transparent}
 .entrada{background:linear-gradient(160deg,#14213d 0%,#1c2b4a 60%,#26406e 100%)!important;color:#fff!important;border-bottom:3px solid var(--ouro)}
@@ -439,6 +442,12 @@ h1,h2,h3,h4{font-family:var(--sans)!important;color:var(--navy)}
 .entrada .marcado,.topo .marcado,.marca-site span{background:none!important;color:#fff!important}
 .topo .bt,.topo button{background:transparent!important;color:#e6ecf7!important;border:1px solid rgba(255,255,255,.35)!important;font-family:var(--sans)}
 .topo .bt:hover,.topo button:hover{border-color:var(--ouro)!important;color:#fff!important}
+/* fix 27/10: selo da sigla legível em todos os temas */
+.placa .etiqueta>span,.etiqueta>span{background:#f3b33d!important;color:#14213d!important;box-shadow:none!important;font-family:var(--sans);font-weight:800}
+.placa .inst-nome{color:#e6ecf7!important}
+.lombada .lomb-num{color:#14213d!important;background:#f3b33d!important}
+.lombada.reservada .lomb-num,.lombada.reservada .lomb-tit{color:#3d4658!important;background:transparent!important}
+:root[data-theme="dark"] .lombada.reservada .lomb-num,:root[data-theme="dark"] .lombada.reservada .lomb-tit{color:#c3cbd8!important}
 </style><!--tema-modelo-d2:fim-->
 </head>
 <body>

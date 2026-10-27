@@ -662,6 +662,9 @@ mark.busca.atual{background:var(--ouro)!important;color:#14213d!important}
 .selo{font-family:var(--sans);font-weight:600;border-radius:3px;background:var(--pg-f)!important;color:var(--pg-t)!important;border:0!important}
 .selo.oficial{background:var(--call-f)!important;color:var(--call-t)!important}
 .selo.externo{background:var(--ref-f)!important;color:var(--ref-t)!important}
+/* fix 27/10: contraste AA */
+:root,html[data-tema="claro"],html[data-tema="sepia"]{--nota-t:#8f5400;--ouro-esc:#855a00;--call-t:#1d5e3d}
+html[data-tema="escuro"]{--ouro-esc:#f3b33d}
 .layout{gap:28px}
 .sumario{font-family:var(--sans)}
 .sumario h2{color:var(--navy)!important;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem;border-bottom:3px solid var(--ouro);padding-bottom:4px}
