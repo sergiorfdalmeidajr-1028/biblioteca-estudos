@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verificação dos cadernos: MBA em Liderança, Gestão de Equipes e Produtividade (PUCRS)</title>
+<style>
+  :root {
+    --fundo: #eef1f4; --papel: #ffffff; --tinta: #1d2733; --tinta-suave: #556170; --linha: #d5dbe2;
+    --ok: #1f7a46; --ok-fundo: #e3f3e9; --aviso: #8a5a00; --aviso-fundo: #fbf0d6;
+    --serif: "Sitka Text", "Iowan Old Style", Georgia, serif; --sans: "Bahnschrift", "Segoe UI", system-ui, sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fundo: #10151b; --papel: #19212a; --tinta: #e6ebf0; --tinta-suave: #9aa7b4; --linha: #2c3743;
+      --ok: #7fd4a0; --ok-fundo: #16301f; --aviso: #f0c46a; --aviso-fundo: #33280f; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fundo: #10151b; --papel: #19212a; --tinta: #e6ebf0; --tinta-suave: #9aa7b4; --linha: #2c3743;
+    --ok: #7fd4a0; --ok-fundo: #16301f; --aviso: #f0c46a; --aviso-fundo: #33280f; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--tinta); font-family: var(--serif); line-height: 1.6; }
+  main { max-width: 980px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1, h2, h3 { font-family: var(--sans); line-height: 1.25; }
+  h1 { font-size: 2rem; margin: 0 0 8px; }
+  h2 { font-size: 1.35rem; margin: 40px 0 12px; }
+  p, li { max-width: 72ch; }
+  a { color: inherit; }
+  .voltar { font-family: var(--sans); font-size: .9rem; }
+  .resumo { background: var(--papel); border: 1px solid var(--linha); border-radius: 10px; padding: 16px 20px; }
+  .tabela { overflow-x: auto; margin: 12px 0; border: 1px solid var(--linha); border-radius: 10px; background: var(--papel); }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--linha); }
+  th { font-family: var(--sans); font-size: .85rem; color: var(--tinta-suave); }
+  tr:last-child td { border-bottom: 0; }
+  .ok { display: inline-block; font-family: var(--sans); font-size: .8rem; padding: 2px 8px; border-radius: 99px; background: var(--ok-fundo); color: var(--ok); white-space: nowrap; }
+  .aviso { display: inline-block; font-family: var(--sans); font-size: .8rem; padding: 2px 8px; border-radius: 99px; background: var(--aviso-fundo); color: var(--aviso); white-space: nowrap; }
+  code { font-size: .88em; overflow-wrap: anywhere; }
+  td { overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main>
+<p class="voltar"><a href="index.html#pucrslgep">← Voltar aos cadernos: MBA em Liderança, Gestão de Equipes e Produtividade</a></p>
+<h1>Como os cadernos foram verificados: MBA em Liderança, Gestão de Equipes e Produtividade (PUCRS)</h1>
+<p>Relatório atualizado em 25/11/2026 sobre os cadernos do MBA em Liderança, Gestão de Equipes e Produtividade (Pontifícia Universidade Católica do Rio Grande do Sul) na Biblioteca de Estudos: o que foi lido, conferido e testado em cada disciplina, os problemas encontrados nos materiais e o que ficou em aberto. Os cadernos dos outros cursos têm páginas de verificação próprias.</p>
+
+<div class="resumo">
+<p><strong>Em números:</strong> nenhum caderno pronto ainda; 25 disciplinas no catálogo do curso.</p>
+</div>
+
+<h2>Checklist</h2>
+<div class="tabela"><table>
+<thead><tr><th>Item</th><th>Situação</th><th>Como foi verificado</th></tr></thead>
+<tbody>
+<tr><td>Cobertura dos materiais</td><td><span class="ok">feito</span></td><td>Transcrição, slides e complementares lidos por inteiro em cada disciplina; nas parciais, slides das Aulas 02 e 03 só para o mapa; profundidade medida contra o livro nas 02 e 03.</td></tr>
+<tr><td>Fontes excluídas</td><td><span class="ok">feito</span></td><td>Os 05 – Resumo (IA) ficaram fora como fonte; nas 21 e 23 só os arquivos v2; PDFs repetidos na raiz não lidos (vale a pasta 03).</td></tr>
+<tr><td>Transcrições</td><td><span class="ok">feito</span></td><td>Usadas as da pasta (Whisper); nada transcrito por conta própria; nomes deformados corrigidos e tabelados em cada caderno.</td></tr>
+<tr><td>Origem das figuras</td><td><span class="ok">feito</span></td><td>Origem por página em cada legenda; folhas de contato das figuras finais conferidas pelo coordenador; retiradas na 02 (slide de uso exclusivo e fotos ao fundo) e na 17 (imagem de filme).</td></tr>
+<tr><td>Exercícios e gabaritos</td><td><span class="ok">feito</span></td><td>Gabarito oficial só nos exercícios de fixação dos livros (01, 02, 03) e em respostas dadas em aula (05, 08); o resto com Resolução deste caderno.</td></tr>
+<tr><td>Cálculos e calculadoras</td><td><span class="ok">feito</span></td><td>Nenhuma calculadora nova; só a 01 usa duas existentes (pomodoro, estudo-distribuido), conferidas com calcs_saida.mjs.</td></tr>
+<tr><td>Fatos externos</td><td><span class="ok">feito</span></td><td>Datas, autorias, leis e estatísticas conferidas em fonte oficial ou acadêmica; o que não deu para conferir está dito como não conferido nas lacunas de cada caderno.</td></tr>
+<tr><td>Links</td><td><span class="ok">feito</span></td><td>links.py em cada caderno; os que recusam robôs (403/429) registrados nas lacunas.</td></tr>
+<tr><td>Computador, celular e tema escuro</td><td><span class="ok">feito</span></td><td>testar_caderno.mjs em cada caderno: 22/22 na 01 e 21/22 nas demais, cuja única falha é não ter calculadora.</td></tr>
+<tr><td>Offline e ferramentas de estudo</td><td><span class="ok">feito</span></td><td>Mesmo teste: abre offline, marca-texto, notas, busca, treino, retomada e cópia anotada.</td></tr>
+<tr><td>Publicação</td><td><span class="ok">feito</span></td><td>22 cadernos publicados como artifacts privados com downloads; links no catálogo; site republicado em 27/11/2026.</td></tr>
+</tbody>
+</table></div>
+
+<h2>Por disciplina</h2>
+<div class="tabela"><table>
+<thead><tr><th>Caderno</th><th>Material lido</th><th>Conteúdo do caderno</th><th>Teste</th></tr></thead>
+<tbody>
+<tr><td><a href="cadernos/pucrslgep-01-inaugural.html">01. Aula Inaugural</a></td><td>Completo: as duas aulas pela transcrição automática, slides, livro da aula, e-book e planilha de bibliografia; 4 exercícios oficiais do livro da aula e 14 do caderno.</td><td>15 figuras, 18 exercícios (4 oficiais), 30 flashcards</td><td><span class="ok">22/22</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-02-mentoria-coaching.html">02. Mentoria e Coaching: promovendo a excelência pessoal</a></td><td>Caderno completo das três aulas, com os 9 exercícios de fixação do livro e gabarito oficial; vídeos e áudios estudados só pela transcrição automática.</td><td>20 figuras, 22 exercícios (9 oficiais), 30 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-03-tarefa-motivacao.html">03. Da tarefa à motivação: propósito e engajamento de equipes</a></td><td>Caderno completo das três aulas, estudadas pela transcrição automática; os 11 exercícios do livro têm gabarito oficial conferido, e slides e fala divergem do livro em VUCA, SMART e nos números da Gallup (o caderno diz o que adotar).</td><td>20 figuras, 24 exercícios (11 oficiais), 32 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-04-sociedade-metamorfose.html">04. Sociedade em metamorfose: os desafios do contemporâneo</a></td><td>Parcial: cobre as Aulas 00 e 01 (Juremir Machado da Silva); as Aulas 02 e 03 e o livro da disciplina entram quando forem liberados, previsão de 30/11/2026.</td><td>2 figuras, 10 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-05-equipes-sucesso.html">05. Equipes de sucesso: atração e permanência de pessoas</a></td><td>Parcial: cobre as Aulas 00 e 01 (atração completa e início da retenção); as Aulas 02 e 03 e o livro entram quando forem liberados.</td><td>9 figuras, 10 exercícios (1 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-06-confianca.html">06. Construindo confiança: impacto da segurança psicológica</a></td><td>Parcial: cobre as Aulas 00 e 01 (Projeto Aristóteles, segurança psicológica, custo do silêncio, Hofstede e a caixa de ferramentas do líder); as Aulas 02 e 03 e o livro da disciplina entram quando forem liberados.</td><td>8 figuras, 8 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-07-autogerenciaveis.html">07. Equipes autogerenciáveis e métodos de organização de times</a></td><td>Parcial: cobre as Aulas 00 e 01 (Mayra de Souza); as Aulas 02 e 03 têm slides na pasta, mas ainda sem gravação, e entram quando forem liberadas.</td><td>10 figuras, 10 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-08-conflitos.html">08. Conectando sentimentos, mediando conflitos e interesses</a></td><td>Parcial: cobre as Aulas 00 e 01 (natureza e origem dos conflitos e panorama dos métodos); as Aulas 02 e 03 e o livro da disciplina entram quando forem liberados.</td><td>9 figuras, 12 exercícios (1 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-09-cultura.html">09. Cultura como determinante de comportamento</a></td><td>Parcial: cobre as Aulas 00 e 01 (Débora Noal) e o guia de cultura corporativa da HBR; faltam as Aulas 02 e 03, ainda sem gravação, e o livro da disciplina.</td><td>3 figuras, 8 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-10-lideranca.html">10. Liderança: como inspirar e influenciar positivamente</a></td><td>Parcial (Aulas 00 e 01): a aula de Geraldo Rufino organizada em ideias de liderança, com o relato de vida em aprofundamento, fatos da empresa conferidos na imprensa e o artigo científico da pasta relido com as contas refeitas.</td><td>3 figuras, 9 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-11-diversidade.html">11. Diversidade: políticas e práticas</a></td><td>Parcial (Aulas 00 e 01): Guilherme Braga sobre viés inconsciente, igualdade, equidade e inclusão, ações afirmativas e a inclusão de pessoas com deficiência, com estatísticas e leis conferidas em fonte oficial.</td><td>14 figuras, 9 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-12-psicologia-grupos.html">12. Psicologia, Comportamento e Grupos</a></td><td>Parcial (Aulas 00 e 01): os comportamentos individuais que fazem um grupo fluir, da inteligência emocional à empatia, com os dois testes de autoavaliação do curso; as Aulas 02 e 03 entram quando forem liberadas.</td><td>12 figuras, 9 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-14-metodologias-ageis.html">14. Metodologias Ágeis (Agile Management)</a></td><td>Parcial: a Aula 01 inteira (43 min de fala e 52 slides, os 35 últimos sem fala) e o complemento sobre o PMBOK 8ª edição; as Aulas 02 e 03 só no mapa.</td><td>15 figuras, 9 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-15-offboarding.html">15. Offboarding: demissões, mudanças e aposentadoria</a></td><td>Parcial: a Aula 01 de Rafael Souto, com os 53 slides, o artigo de Savickas e colegas e as regras de aviso prévio e aposentadoria conferidas no Planalto; a Aula 00 desta disciplina é só divulgação, e as Aulas 02 e 03 entram quando forem liberadas.</td><td>9 figuras, 8 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-16-ia-lideranca.html">16. Inteligência Artificial e liderança: impactos na gestão</a></td><td>Parcial (Aulas 00 e 01): a aula gravada de Cezar Taurion tem 46min39s e chega ao slide 24; os slides 25 a 75 entram sem fala, com os números de IA conferidos e datados.</td><td>9 figuras, 9 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-17-design-resiliencia.html">17. Design, Adventurous Thinking e Resilience: inovar no incerto</a></td><td>Parcial (Aulas 00 e 01). A Aula 01 gravada é só a Parte 1 (slides 1 a 28); os slides 29 a 88 entram sem fala; as Aulas 02 e 03 estão só no mapa.</td><td>21 figuras, 9 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-18-mindfulness.html">18. Mindfulness: o poder da presença</a></td><td>Parcial (Aulas 00 e 01): a Aula 01, em inglês, chegou com transcrição traduzida por máquina e foi reconstruída pelo sentido; a gravação cobre os slides 1 a 23, e os slides 24 a 83 entram só pelos slides.</td><td>9 figuras, 8 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-19-coaching-equipes.html">19. Mentoria e Coaching de equipes: desenvolvimento tailor-made</a></td><td>Parcial: a Aula 01 de Sidnei Oliveira (gravação de 45 min até o slide 6, mais os slides 7 a 37 pelo texto); as Aulas 02 e 03 só no mapa, pelos slides.</td><td>8 figuras, 8 exercícios (0 oficiais), 9 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-20-incongruencia.html">20. (In)congruência na empresa: estratégia e líderes se falam</a></td><td>Parcial (Aulas 00 e 01): a gravação da Aula 01 cobre os slides 1 a 52 de 296; o resto entra só pelos slides.</td><td>26 figuras, 9 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-21-inteligencia-emocional.html">21. Inteligência Emocional e Neurociência</a></td><td>Parcial (Aulas 00 e 01): a palestra de 35 min de Daniel Goleman, pela transcrição v2, com os slides de apoio e os complementares; as Aulas 02 e 03 ainda sem gravação.</td><td>6 figuras, 8 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-22-futuro-emergente.html">22. Como aprender e liderar a partir de um futuro emergente</a></td><td>Parcial (Aulas 00 e 01): a Teoria U de Scharmer como gestão da mudança; a gravação da Aula 01 vai até o slide 17, e os slides 18 a 58 entram sem fala.</td><td>12 figuras, 8 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<tr><td><a href="cadernos/pucrslgep-23-profissional-integral.html">23. Profissional Integral: consciência e transformação social</a></td><td>Parcial: a contextualização e os primeiros 40 minutos da Aula 01 (a pasta só tem a Parte 1 da palestra de 2h55); o resto da palestra está ligado ao caderno da mesma disciplina no MBA em Tecnologia.</td><td>1 figuras, 8 exercícios (0 oficiais), 10 flashcards</td><td><span class="ok">21/22 (sem calculadora)</span></td></tr>
+<!-- fim-linhas: cada caderno pronto ganha uma linha <tr> antes deste comentário, na ordem do curso -->
+</tbody>
+</table></div>
+
+<h2>Principais problemas encontrados nos materiais</h2>
+<ul>
+<li>Na maioria das disciplinas 05 a 23 a gravação da Aula 01 cobre só parte dos slides (por exemplo, 52 de 296 na 20, 6 de 37 na 19); o resto entra pelo texto dos slides, marcado.</li>
+<li>Em quase todas as disciplinas 14 a 23 o vídeo &quot;Introdução&quot; (Aula 00) é só o anúncio do Programa de Indicações.</li>
+<li>As Aulas 01 das 17, 18 e 21 são em inglês e a transcrição saiu traduzida por máquina, com muitos erros; o sentido foi reconstruído.</li>
+<li>Datas, autorias e números errados nos slides e na fala, corrigidos em caixas de divergência em cada caderno.</li>
+<!-- fim-problemas -->
+</ul>
+
+<h2>Lacunas que não consegui resolver</h2>
+<ul>
+<li>Aulas 02 e 03 de todas as disciplinas 04 a 23 (a 04 prevista para 30/11/2026; a 05 para 11/12) e os livros das disciplinas.</li>
+<li>Disciplina 13: aguardando a transcrição; 24 (Prova Final e TCC) e 25 (Orientação de TCC) sem caderno.</li>
+<li>Partes seguintes das Aulas 01 gravadas só em parte (17, 23 e outras).</li>
+<!-- fim-lacunas -->
+</ul>
+
+<h2>Arquivos</h2>
+<ul>
+<li>Cadernos: <code>cadernos/</code>, um HTML por disciplina; a página do curso na entrada é <code>index.html#pucrslgep</code>.</li>
+<li>Fontes de cada caderno: <code>fonte/src/pucrslgep-NN-tema/</code> (Markdown, figuras e cadastro das figuras).</li>
+<li>Catálogo do site: <code>site/catalogo.json</code>, curso <code>pucrslgep</code>.</li>
+</ul>
+</main>
+</body>
+</html>
